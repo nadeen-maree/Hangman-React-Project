@@ -1,13 +1,18 @@
 import React from 'react';
+import Letter from './Letter';
 
-const Solution = () => {
-  const hint = "Your ideal mood when coding.";
-  const emptySpaces = Array(4).fill('_').join(' ');
-
+const Solution = ({ letterStatus, solution }) => {
   return (
     <div>
-      <p>{emptySpaces}</p>
-      <p>{hint}</p>
+      {solution.word.split('').map((letter, index) => (
+        <Letter
+          key={index}
+          value={letter}
+          isVisible={letterStatus[letter]}
+          isSolution={true}
+        />
+      ))}
+      <p>Hint: {solution.hint}</p>
     </div>
   );
 };

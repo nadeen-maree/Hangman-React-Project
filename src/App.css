@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.letter {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+
+.letter.disabled {
+  color: #888;
+  cursor: not-allowed;
+}
+
+.solution {
+  font-weight: bold;
+}
