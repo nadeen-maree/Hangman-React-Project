@@ -12,7 +12,7 @@ const Solution = ({ letterStatus, solution }) => {
           isSolution={true}
         />
       ))}
-      <p>Hint: {solution.hint}</p>
+      <p className='hint'><b>Hint:</b> {solution.hint}</p>
     </div>
   );
 };

@@ -5,7 +5,7 @@ const Letters = ({ letterStatus, onSelect }) => {
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
   return (
-    <div>
+    <div className='keyboard'>
       {alphabet.split('').map((letter, index) => (
         <Letter
           key={index}
